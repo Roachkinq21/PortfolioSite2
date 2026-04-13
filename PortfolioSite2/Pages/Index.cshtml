@@ -11,19 +11,38 @@
     <div>
         <h1 class="display-2">Welcome to my Portfolio!</h1>
     </div>
-    <div class="container bg-gradient mt-5">
-        <p>test</p>
-    </div>
 
-    <section id="skills" class="py-section bg-dark-2">
+
+
+    <section id="skills" class="bg-body-secondary p-4 rounded-pill mb-4">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="row g-4 mt-2">
+            <h2 class="section-title display-4">Education</h2>
+            <p>___________________________________________________________________________________________________________________</p>
+            <div class="container fs-3">
+                <div class="row justify-content-between mx-5">
+                    <div class="col-auto">Georgia Gwinnett College</div>
+                    <div class="col-auto">2020-2026</div>
+                    <div>
+                        Bachelor of Science in Information Technology; Major in Digital Media
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
-                <div class="">
-                    <h6 class="skill-group-title">Languages</h6>
-                    <div class="flex-wrap gap-2 mt-2">
+    <!--Skills-->
+    <section id="skills" class="bg-body-secondary p-4 rounded-pill mb-4">
+        <div class="container">
+            <h2 class="section-title display-4">Skills</h2>
+            <p>___________________________________________________________________________________________________________________</p>
+            <div class="row g-4 mt-2 fs-4">
+
+                <div>
+                    <h6 class="fs-1">Languages</h6>
+                    <div class="flex-wrap gap-2 mt-2 mb-3">
                         <span class="badge skill-badge">C#</span>
+                        <span class="badge skill-badge">Java</span>
                         <span class="badge skill-badge">JavaScript</span>
                         <span class="badge skill-badge">TypeScript</span>
                         <span class="badge skill-badge">SQL</span>
@@ -32,23 +51,25 @@
                 </div>
 
                 <div>
-                    <h6 class="skill-group-title">Frameworks & Libraries</h6>
-                    <div class="flex-wrap gap-2 mt-2">
+                    <h6 class="fs-1">Frameworks & Libraries</h6>
+                    <div class="flex-wrap gap-2 mt-2 mb-3">
                         <span class="badge skill-badge">ASP.NET Core</span>
-                        <span class="badge skill-badge">Blazor</span>
+                        <span class="badge skill-badge">Razor</span>
                         <span class="badge skill-badge">Entity Framework</span>
                         <span class="badge skill-badge">React</span>
                         <span class="badge skill-badge">Bootstrap</span>
+                        <span class="badge skill-badge">TailwindCSS</span>
                     </div>
                 </div>
 
-                <div class="">
-                    <h6 class="skill-group-title">Tools & Platforms</h6>
-                    <div class="flex-wrap gap-2 mt-2">
-                        <span class="badge skill-badge">Azure</span
+                <div>
+                    <h6 class="fs-1">Tools & Platforms</h6>
+                    <div class="flex-wrap gap-2 mt-2 mb-3">
+                        <span class="badge skill-badge">Azure</span>
                         <span class="badge skill-badge">Git</span>
                         <span class="badge skill-badge">SQL Server</span>
                         <span class="badge skill-badge">Visual Studio</span>
+                        <span class="badge skill-badge">Visual Studio Code</span>
                         <span class="badge skill-badge">Eclipse</span>
                         <span class="badge skill-badge">Claude AI</span>
                     </div>
@@ -58,41 +79,50 @@
         </div>
     </section>
 
-    <div class="card text-center text-bg-secondary mt-4">
-    <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="true" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="row g-1 mt-">
-    <div class="col-md-2">
-    <img src="..." class="img-fluid rounded-start" alt="...">
-    </div>
-
-    <div class="col-md-8">
-        <div class="card-body">
-        <h5 class="card-title d-flex">Special title treatment</h5>
-        <p class="card-text d-flex">With supporting text below as a natural lead-in to additional content.</p>
-        <div class="d-flex flex-row mb-3">
-            <i class="bi bi-envelope btn btn-primary fs-2 me-2"> Email</i>
-            <i class="bi bi-telephone btn btn-primary fs-2 me-2"> Phone</i>
+    <!--Certifications-->
+    <section id="Certification" class="bg-body-secondary p-4 rounded-pill mb-4">
+        <div class="container">
+            <h2 class="section-title display-4">Certifications</h2>
+            <p>___________________________________________________________________________________________________________________</p>
         </div>
+    </section>
+
+    <!--InfoCard-->
+    <div class="card text-center bg-body-secondary fs-4 mt-5">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="true" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
-    </div>
-  </div>
+
+        <div class="row g-1">
+            <div class="col-md-2">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+            </div>
+
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title d-flex">Special title treatment</h5>
+                    <p class="card-text d-flex">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="d-flex flex-row mb-3">
+                        <button type="button" class="btn btn-primary fs-2 me-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="brennonary@protonmail.com"><i class="bi bi-envelope"></i> Email</button>
+                        <button type="button" class="btn btn-primary fs-2 me-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="(678)-357-9992)"><i class="bi bi-telephone"></i> Phone</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
   
   
-</div>
+    </div>
 
 
 </div>

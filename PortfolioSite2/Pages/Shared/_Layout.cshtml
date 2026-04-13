@@ -1,39 +1,42 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebProf</title>
+    <title>@ViewData["Title"] - Brennon Ary</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebProf.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 </head>
-<body class="bg-dark text-white">
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand text-white me-5" asp-area="" asp-page="/Index">Brennon Ary</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body class="bg-body text-white">
+    <header class="d-flex justify-content-center p-3 bg-body-tertiary">
+        <div class="me-3">
+            <h1>Brennon Ary</h1>
+        </div>
+
+        <div class="container fs-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a asp-page="/Index" class="nav-link text-white @(ViewContext.RouteData.Values["page"]?.ToString() == "/Index" ? "active" : "")" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-page="/Projects" class="nav-link text-white @(ViewContext.RouteData.Values["page"]?.ToString() == "/Projects" ? "active" : "")">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">About</a>
+                </li>
+            </ul>
+        </div>
+
+        
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -41,7 +44,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer bg-dark text-white-50">
+    <footer class="footer bg-body-tertiary text-white-50 py-2">
         <div class="container">
             &copy; 2026 - WebProf - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
